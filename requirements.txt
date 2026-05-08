@@ -1,0 +1,9 @@
+datasets>=2.18
+numpy>=1.23
+pillow>=9.5
+protobuf<5
+safetensors>=0.4
+torch>=2.1
+tqdm>=4.66
+transformers>=4.37
+
