@@ -1,7 +1,7 @@
 <h1>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/featcal_title_dark.svg">
-    <img alt="FeatCal: Feature Calibration for Post-Merging Models" src="assets/featcal_title.svg" width="900">
+    <img alt="FeatCal: Feature Calibration for Post-Merging Models" src="assets/featcal_title.svg" width="960">
   </picture>
 </h1>
 
@@ -12,6 +12,12 @@ Official code for **FeatCal: Feature Calibration for Post-Merging Models**
 
 This self-contained demo reproduces the CLIP ViT-B/32 8-task Task Arithmetic +
 FeatCal result.
+
+## News
+
+- **2026-05-14:** Paper released on arXiv: [arXiv:2605.13030](https://arxiv.org/abs/2605.13030).
+- **2026-05-08:** Demo code released for reproducing the CLIP ViT-B/32 8-task
+  Task Arithmetic + FeatCal result.
 
 ## Paper Overview
 
