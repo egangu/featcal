@@ -75,12 +75,16 @@ Small numeric differences can occur from dependency versions and dataloader
 ordering, but the average should match closely when using the same seed and full
 datasets.
 
-## Sample Efficiency
+## Runtime Efficiency
 
-In the CLIP ViT-B/32 8-task TA analysis, FeatCal reaches strong accuracy with a
-small number of calibration examples per task and saturates quickly.
+Post-TA runtime at `n=256`, excluding final evaluation. Speedup is relative to
+Surgery.
 
-![FeatCal sample efficiency](assets/ta8_data_efficiency.png)
+| Method | Speedup (Time) | GPU Energy (Wh) | CPU RSS (GiB) |
+|---|---:|---:|---:|
+| Surgery | 1.0x (217s) | 18.1 | 69.3 |
+| ProbSurgery | 1.0x (224s) | 18.3 | 87.0 |
+| FeatCal | **4.1x (53s)** | **1.9** | **22.8** |
 
 ## Clone
 
