@@ -1,7 +1,12 @@
-# FeatCal: Feature Calibration for Post-Model Merging
+# FeatCal: Feature Calibration for Post-Merging Models
+
+[![arXiv](https://img.shields.io/badge/arXiv-2605.13030-b31b1b.svg)](https://arxiv.org/abs/2605.13030)
 
 This repository contains the minimal official demo for reproducing the CLIP
-ViT-B/32 8-task Task Arithmetic + FeatCal result.
+ViT-B/32 8-task Task Arithmetic + FeatCal result from our paper:
+
+**FeatCal: Feature Calibration for Post-Merging Models**  
+[arXiv:2605.13030](https://arxiv.org/abs/2605.13030)
 
 The demo is self-contained and includes the code needed to:
 
@@ -10,6 +15,33 @@ The demo is self-contained and includes the code needed to:
 3. construct Task Arithmetic merged weights,
 4. run FeatCal calibration,
 5. evaluate zero-shot classification accuracy.
+
+## Paper Overview
+
+Model merging combines task experts into a single model, but the merged model can
+still underperform the experts. FeatCal studies this gap through feature drift:
+the difference between features produced by the merged model and by the task
+expert on the same input. It then calibrates the merged model layer by layer in
+forward order using a small calibration set.
+
+FeatCal updates model weights with closed-form solutions. It does not use
+gradient descent, iterative optimization, extra modules, or an auxiliary
+inference path.
+
+![FeatCal overview](assets/intro_triptych.png)
+
+## Paper Highlights
+
+This repository currently provides a lightweight reproduction of the CLIP
+ViT-B/32 8-task Task Arithmetic + FeatCal setting. Broader CLIP, FLAN-T5, and
+MergeBench results are reported in the paper.
+
+| Setting | Baseline | + FeatCal |
+|---|---:|---:|
+| CLIP ViT-B/32 TA, 8 tasks | 67.5 | 85.5 |
+| FLAN-T5-base GLUE TA | 78.9 | 85.2 |
+| Llama-3.2-3B MergeBench TA | 60.1 | 62.1 |
+| Llama-3.1-8B MergeBench TA | 63.5 | 65.8 |
 
 ## Demo Setting
 
@@ -50,6 +82,13 @@ Per-task reference accuracies:
 Small numeric differences can occur from dependency versions and dataloader
 ordering, but the average should match closely when using the same seed and full
 datasets.
+
+## Sample Efficiency
+
+In the CLIP ViT-B/32 8-task TA analysis, FeatCal reaches strong accuracy with a
+small number of calibration examples per task and saturates quickly.
+
+![FeatCal sample efficiency](assets/ta8_data_efficiency.png)
 
 ## Clone
 
@@ -178,3 +217,19 @@ it collects current merged-model features and task-expert features on the
 calibration split, then solves closed-form updates for Linear weights, Linear
 biases, and LayerNorm affine parameters. Test data is used only for final
 evaluation.
+
+## Citation
+
+If you find this repository useful, please cite:
+
+```bibtex
+@misc{gu2026featcalfeaturecalibrationpostmerging,
+      title={FeatCal: Feature Calibration for Post-Merging Models}, 
+      author={Yanggan Gu and Shuo Cai and Zihao Wang and Wenjun Wang and Yuanyi Wang and Pengkai Wang and Sirui Huang and Su Lu and Jianmin Wu and Hongxia Yang},
+      year={2026},
+      eprint={2605.13030},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.13030}, 
+}
+```

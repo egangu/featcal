@@ -10,4 +10,5 @@ dist/
 .cache/
 outputs/
 *.zip
+arXiv-*.tar.gz
 .DS_Store
