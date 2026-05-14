@@ -2,19 +2,11 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.13030-b31b1b.svg)](https://arxiv.org/abs/2605.13030)
 
-This repository contains the minimal official demo for reproducing the CLIP
-ViT-B/32 8-task Task Arithmetic + FeatCal result from our paper:
+Official code for **FeatCal: Feature Calibration for Post-Merging Models**
+([arXiv:2605.13030](https://arxiv.org/abs/2605.13030)).
 
-**FeatCal: Feature Calibration for Post-Merging Models**  
-[arXiv:2605.13030](https://arxiv.org/abs/2605.13030)
-
-The demo is self-contained and includes the code needed to:
-
-1. load CLIP models,
-2. load the 8 task datasets,
-3. construct Task Arithmetic merged weights,
-4. run FeatCal calibration,
-5. evaluate zero-shot classification accuracy.
+This self-contained demo reproduces the CLIP ViT-B/32 8-task Task Arithmetic +
+FeatCal result.
 
 ## Paper Overview
 
