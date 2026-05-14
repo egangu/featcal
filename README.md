@@ -6,6 +6,7 @@
 </h1>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.13030-b31b1b.svg)](https://arxiv.org/abs/2605.13030)
+[![Hugging Face Papers](https://img.shields.io/badge/Hugging%20Face-Papers-ffcc4d.svg)](https://huggingface.co/papers/2605.13030)
 
 Official code for **FeatCal: Feature Calibration for Post-Merging Models**.
 
@@ -14,7 +15,7 @@ FeatCal result.
 
 ## News
 
-- **2026-05-14:** Paper released on arXiv.
+- **2026-05-14:** Paper released on arXiv and Hugging Face Papers.
 - **2026-05-08:** Demo code released for reproducing the CLIP ViT-B/32 8-task
   Task Arithmetic + FeatCal result.
 
