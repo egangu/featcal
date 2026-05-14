@@ -230,7 +230,7 @@ evaluation.
 If you find this repository useful, please cite:
 
 ```bibtex
-@misc{gu2026featcalfeaturecalibrationpostmerging,
+@misc{gu2026featcal,
       title={FeatCal: Feature Calibration for Post-Merging Models}, 
       author={Yanggan Gu and Shuo Cai and Zihao Wang and Wenjun Wang and Yuanyi Wang and Pengkai Wang and Sirui Huang and Su Lu and Jianmin Wu and Hongxia Yang},
       year={2026},
