@@ -1,4 +1,9 @@
-# FeatCal: Feature Calibration for Post-Merging Models
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/featcal_title_dark.svg">
+    <img alt="FeatCal: Feature Calibration for Post-Merging Models" src="assets/featcal_title.svg" width="900">
+  </picture>
+</h1>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.13030-b31b1b.svg)](https://arxiv.org/abs/2605.13030)
 
