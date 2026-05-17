@@ -5,6 +5,8 @@
   </picture>
 </h1>
 
+Languages: **English** | [简体中文](README.zh-CN.md)
+
 [![arXiv](https://img.shields.io/badge/arXiv-2605.13030-b31b1b.svg)](https://arxiv.org/abs/2605.13030)
 [![Hugging Face Papers](https://img.shields.io/badge/Hugging%20Face-Papers-ffcc4d.svg)](https://huggingface.co/papers/2605.13030)
 
@@ -231,12 +233,12 @@ If you find this repository useful, please cite:
 
 ```bibtex
 @misc{gu2026featcal,
-      title={FeatCal: Feature Calibration for Post-Merging Models}, 
+      title={FeatCal: Feature Calibration for Post-Merging Models},
       author={Yanggan Gu and Shuo Cai and Zihao Wang and Wenjun Wang and Yuanyi Wang and Pengkai Wang and Sirui Huang and Su Lu and Jianmin Wu and Hongxia Yang},
       year={2026},
       eprint={2605.13030},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2605.13030}, 
+      url={https://arxiv.org/abs/2605.13030},
 }
 ```
