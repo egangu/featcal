@@ -232,3 +232,15 @@ FeatCal 按前向顺序校准 CLIP 视觉编码器层。对于每一层，
       url={https://arxiv.org/abs/2605.13030},
 }
 ```
+
+## 相关项目
+
+- [FusionBench](https://github.com/tanganke/fusion_bench)：深度模型融合的综合
+  benchmark 和工具包。
+- [MergeBench](https://yifei-he.github.io/mergebench/)：面向领域专用 LLM 合并的
+  benchmark。
+- [Task Vectors / Task Arithmetic](https://github.com/mlfoundations/task_vectors)：
+  用于 task arithmetic 模型编辑的代码与 checkpoint。
+- [mergekit](https://github.com/arcee-ai/mergekit)：用于合并预训练大语言模型的工具。
+- [Representation Surgery](https://github.com/EnnengYang/RepresentationSurgery)：
+  面向多任务模型合并的合并后表征校准基线。

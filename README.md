@@ -242,3 +242,17 @@ If you find this repository useful, please cite:
       url={https://arxiv.org/abs/2605.13030},
 }
 ```
+
+## Related Projects
+
+- [FusionBench](https://github.com/tanganke/fusion_bench): A comprehensive
+  benchmark and toolkit for deep model fusion.
+- [MergeBench](https://yifei-he.github.io/mergebench/): A benchmark for merging
+  domain-specialized LLMs.
+- [Task Vectors / Task Arithmetic](https://github.com/mlfoundations/task_vectors):
+  Code and checkpoints for editing models with task arithmetic.
+- [mergekit](https://github.com/arcee-ai/mergekit): Tools for merging pretrained
+  large language models.
+- [Representation Surgery](https://github.com/EnnengYang/RepresentationSurgery):
+  A post-merging representation calibration baseline for multi-task model
+  merging.
